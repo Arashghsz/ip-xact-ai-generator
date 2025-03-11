@@ -6,3 +6,8 @@ AI-powered system for generating valid IP-XACT components using LLMs and reinfor
 - How many data do we need?
 - any idea how to integrate the validation? (from CMD?)
 - Where the dataset?
+
+# Possible base models for training:
+Mistral 7B – Small but highly efficient model.
+CodeLLaMA 
+Phi-2 (Microsoft)
