@@ -1,0 +1,10 @@
+[
+    {
+      "instruction": "Design an UART controller with configurable baud rate, 8-bit data, and interrupt capability",
+      "response": "<ipxact:component xmlns:ipxact=\"http://www.accellera.org/XMLSchema/IPXACT/1685-2014\">\n  ... [complete XML] ... \n</ipxact:component>"
+    },
+    {
+      "instruction": "Create an IP-XACT component for a 32-bit timer with prescaler and multiple compare registers",
+      "response": "<ipxact:component xmlns:ipxact=\"http://www.accellera.org/XMLSchema/IPXACT/1685-2014\">\n  ... [complete XML] ... \n</ipxact:component>"
+    }
+  ]
