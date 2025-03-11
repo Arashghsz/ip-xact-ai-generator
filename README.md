@@ -5,3 +5,4 @@ AI-powered system for generating valid IP-XACT components using LLMs and reinfor
 - What would be the ideal output? User enter's an input and get the HW component?
 - How many data do we need?
 - any idea how to integrate the validation? (from CMD?)
+- Where the dataset?
