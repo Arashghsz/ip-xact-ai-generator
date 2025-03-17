@@ -7,6 +7,7 @@ AI-powered system for generating valid IP-XACT components using LLMs and reinfor
 - any idea how to integrate the validation? (from CMD?)
 # Questions to ask from mentors (Week 2-3)
 - Can we use other verification tools? (Kaktus2 does not provide CLI or api to use.)
+- The one I have developed or use LLM to verify it.
 
 # Notes for the team
 - To use verification please go to validation folder then run command:
