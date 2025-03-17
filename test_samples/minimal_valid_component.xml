@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:component
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014"
+    xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+    
+    <!-- Required vendor/library/name/version -->
+    <ipxact:vendor>example.org</ipxact:vendor>
+    <ipxact:library>primitives</ipxact:library>
+    <ipxact:name>minimal_counter</ipxact:name>
+    <ipxact:version>1.0</ipxact:version>
+    
+    <!-- Minimal model with only required elements -->
+    <ipxact:model>
+        <ipxact:views>
+            <ipxact:view>
+                <ipxact:name>rtl</ipxact:name>
+                <ipxact:envIdentifier>VERILOG:RTL</ipxact:envIdentifier>
+            </ipxact:view>
+        </ipxact:views>
+        <ipxact:ports>
+            <ipxact:port>
+                <ipxact:name>clk</ipxact:name>
+                <ipxact:wire>
+                    <ipxact:direction>in</ipxact:direction>
+                </ipxact:wire>
+            </ipxact:port>
+        </ipxact:ports>
+    </ipxact:model>
+    
+    <ipxact:description>Minimal Valid IP-XACT Component</ipxact:description>
+</ipxact:component>

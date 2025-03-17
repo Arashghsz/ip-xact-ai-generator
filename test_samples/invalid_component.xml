@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:component
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014"
+    xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+    
+    <!-- Missing required vendor element -->
+    <ipxact:library>peripherals</ipxact:library>
+    <ipxact:name>uart</ipxact:name>
+    <ipxact:version>2.1</ipxact:version>
+    
+    <!-- Incorrect structure: busInterface instead of busInterfaces -->
+    <ipxact:busInterface>
+        <ipxact:name>apb</ipxact:name>
+        <!-- Missing required busType element -->
+    </ipxact:busInterface>
+    
+    <ipxact:model>
+        <ipxact:views>
+            <ipxact:view>
+                <ipxact:name>rtl</ipxact:name>
+                <!-- Missing required envIdentifier element -->
+            </ipxact:view>
+        </ipxact:views>
+        <ipxact:ports>
+            <ipxact:port>
+                <!-- Invalid port: missing required wire or transactional element -->
+                <ipxact:name>tx</ipxact:name>
+            </ipxact:port>
+        </ipxact:ports>
+    </ipxact:model>
+    
+    <ipxact:description>UART Controller with Invalid Schema Structure</ipxact:description>
+</ipxact:component>
