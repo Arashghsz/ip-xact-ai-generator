@@ -1,10 +1,38 @@
 [
-    {
-      "instruction": "Design an UART controller with configurable baud rate, 8-bit data, and interrupt capability",
-      "response": "<ipxact:component xmlns:ipxact=\"http://www.accellera.org/XMLSchema/IPXACT/1685-2014\">\n  ... [complete XML] ... \n</ipxact:component>"
-    },
-    {
-      "instruction": "Create an IP-XACT component for a 32-bit timer with prescaler and multiple compare registers",
-      "response": "<ipxact:component xmlns:ipxact=\"http://www.accellera.org/XMLSchema/IPXACT/1685-2014\">\n  ... [complete XML] ... \n</ipxact:component>"
-    }
+ {
+    "instruction": "Design a Sample Generator component for testing purposes",
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ipxact:component xmlns:ipxact='http://www.accellera.org/XMLSchema/IPXACT/1685-2014'>\n  <ipxact:vendor>tut.fi</ipxact:vendor>\n  <ipxact:library>examples</ipxact:library>\n  <ipxact:name>SampleGenerator</ipxact:name>\n  <ipxact:version>1.0</ipxact:version>\n  <!-- Additional XML content defining the Sample Generator component -->\n</ipxact:component>"
+  },
+  {
+    "instruction": "Create a Sample Importer component for data import functionality",
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ipxact:component xmlns:ipxact='http://www.accellera.org/XMLSchema/IPXACT/1685-2014'>\n  <ipxact:vendor>tut.fi</ipxact:vendor>\n  <ipxact:library>examples</ipxact:library>\n  <ipxact:name>SampleImporter</ipxact:name>\n  <ipxact:version>1.0</ipxact:version>\n  <!-- Additional XML content defining the Sample Importer component -->\n</ipxact:component>"
+  },
+  {
+    "instruction": "Develop a Sample Source Analyzer component for source code analysis",
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ipxact:component xmlns:ipxact='http://www.accellera.org/XMLSchema/IPXACT/1685-2014'>\n  <ipxact:vendor>tut.fi</ipxact:vendor>\n  <ipxact:library>examples</ipxact:library>\n  <ipxact:name>SampleSourceAnalyzer</ipxact:name>\n  <ipxact:version>1.0</ipxact:version>\n  <!-- Additional XML content defining the Sample Source Analyzer component -->\n</ipxact:component>"
+  },
+  {
+    "instruction": "Define a Bus Definition component for custom bus interfaces",
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ipxact:busDefinition xmlns:ipxact='http://www.accellera.org/XMLSchema/IPXACT/1685-2014'>\n  <ipxact:vendor>tut.fi</ipxact:vendor>\n  <ipxact:library>examples</ipxact:library>\n  <ipxact:name>BusDefinition</ipxact:name>\n  <ipxact:version>1.0</ipxact:version>\n  <!-- Additional XML content defining the Bus Definition -->\n</ipxact:busDefinition>"
+  },
+  {
+    "instruction": "Create a Component Editor component for editing IP-XACT components",
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ipxact:component xmlns:ipxact='http://www.accellera.org/XMLSchema/IPXACT/1685-2014'>\n  <ipxact:vendor>tut.fi</ipxact:vendor>\n  <ipxact:library>examples</ipxact:library>\n  <ipxact:name>ComponentEditor</ipxact:name>\n  <ipxact:version>1.0</ipxact:version>\n  <!-- Additional XML content defining the Component Editor -->\n</ipxact:component>"
+  },
+  {
+    "instruction": "Develop a Design Editor component for editing system designs",
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ipxact:design xmlns:ipxact='http://www.accellera.org/XMLSchema/IPXACT/1685-2014'>\n  <ipxact:vendor>tut.fi</ipxact:vendor>\n  <ipxact:library>examples</ipxact:library>\n  <ipxact:name>DesignEditor</ipxact:name>\n  <ipxact:version>1.0</ipxact:version>\n  <!-- Additional XML content defining the Design Editor -->\n</ipxact:design>"
+  },
+  {
+    "instruction": "Define a Getting Started component for new users",
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ipxact:documentation xmlns:ipxact='http://www.accellera.org/XMLSchema/IPXACT/1685-2014'>\n  <ipxact:vendor>tut.fi</ipxact:vendor>\n  <ipxact:library>examples</ipxact:library>\n  <ipxact:name>GettingStarted</ipxact:name>\n  <ipxact:version>1.0</ipxact:version>\n  <!-- Additional XML content providing getting started documentation -->\n</ipxact:documentation>"
+  },
+  {
+    "instruction": "Create a Memory Design component for memory configurations",
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ipxact:memoryMap xmlns:ipxact='http://www.accellera.org/XMLSchema/IPXACT/1685-2014'>\n  <ipxact:vendor>tut.fi</ipxact:vendor>\n  <ipxact:library>examples</ipxact:library>\n  <ipxact:name>MemoryDesign</ipxact:name>\n  <ipxact:version>1.0</ipxact:version>\n  <!-- Additional XML content defining the Memory Design -->\n</ipxact:memoryMap>"
+  },
+  {
+    "instruction": "Develop a Simulation Support component for simulation configurations",
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ipxact:component xmlns:ipxact='http://www.accellera.org/XMLSchema/IPXACT/1685-2014'>\n  <ipxact:vendor>tut.fi</ipxact:vendor>\n  <ipxact:library>examples</ipxact:library>\n  <ipxact:name>SimulationSupport</ipxact:name>\n  <ipxact:version>1.0</ipxact:version>\n  <!-- Additional XML content defining the Simulation Support component -->\n</ipxact:component>"
+  },
   ]
