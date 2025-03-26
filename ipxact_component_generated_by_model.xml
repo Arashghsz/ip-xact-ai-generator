@@ -1,0 +1,86 @@
+<ipxact:component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:kactus2="http://kactus2.cs.tut.fi" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+	<ipxact:vendor>pulp-platform.org</ipxact:vendor>
+	<ipxact:library>interface</ipxact:library>
+	<ipxact:name>uart</ipxact:name>
+	<ipxact:version>1.0</ipxact:version>
+	<ipxact:busInterfaces>
+		<ipxact:busInterface>
+			<ipxact:name>rx</ipxact:name>
+			<ipxact:busType vendor="pulp-platform.org" library="interface" name="uart_rx" version="1.0"/>
+			<ipxact:abstractionTypes>
+				<ipxact:abstractionType>
+					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="uart_rx.absDef" version="1.0"/>
+					<ipxact:portMaps>
+						<ipxact:portMap>
+							<ipxact:master>
+								<ipxact:componentInstantiationRef>uart_rx_inst</ipxact:componentInstantiationRef>
+								<ipxact:port>rx</ipxact:port>
+							</ipxact:master>
+							<ipxact:slave>
+								<ipxact:vendor>pulp-platform.org</ipxact:vendor>
+								<ipxact:library>communication.transceiver</ipxact:library>
+								<ipxact:name>spi_transceiver</ipxact:name>
+								<ipxact:version>1.0</ipxact:version>
+								<ipxact:designRef>
+									<ipxact:component vendor="pulp-platform.org" library="communication.transceiver" name="spi_transceiver" version="1.0"/>
+									<ipxact:view>transceiver</ipxact:view>
+								</ipxact:designRef>
+								<ipxact:designRef>
+									<ipxact:component vendor="pulp-platform.org" library="communication.transceiver" name="spi_transceiver" version="1.0"/>
+									<ipxact:view>transmitter</ipxact:view>
+								</ipxact:designRef>
+							</ipxact:slave>
+						</ipxact:portMap>
+					</ipxact:portMaps>
+				</ipxact:abstractionType>
+			</ipxact:abstractionTypes>
+		</ipxact:busInterface>
+		<ipxact:busInterface>
+			<ipxact:name>tx</ipxact:name>
+			<ipxact:busType vendor="pulp-platform.org" library="interface" name="uart_tx" version="1.0"/>
+			<ipxact:abstractionTypes>
+				<ipxact:abstractionType>
+					<ipxact:abstractionRef vendor="pulp-platform.org" library="interface" name="uart_tx.absDef" version="1.0"/>
+					<ipxact:portMaps>
+						<ipxact:portMap>
+							<ipxact:master>
+								<ipxact:componentInstantiationRef>uart_tx_inst</ipxact:componentInstantiationRef>
+								<ipxact:port>tx</ipxact:port>
+							</ipxact:master>
+							<ipxact:slave>
+								<ipxact:vendor>pulp-platform.org</ipxact:vendor>
+								<ipxact:library>communication.transceiver</ipxact:library>
+								<ipxact:name>spi_transceiver</ipxact:name>
+								<ipxact:version>1.0</ipxact:version>
+								<ipxact:designRef>
+									<ipxact:component vendor="pulp-platform.org" library="communication.transceiver" name="spi_transceiver" version="1.0"/>
+									<ipxact:view>transceiver</ipxact:view>
+								</ipxact:designRef>
+								<ipxact:designRef>
+									<ipxact:component vendor="pulp-platform.org" library="communication.transceiver" name="spi_transceiver" version="1.0"/>
+									<ipxact:view>receiver</ipxact:view>
+								</ipxact:designRef>
+							</ipxact:slave>
+						</ipxact:portMap>
+					</ipxact:portMaps>
+				</ipxact:abstractionType>
+			</ipxact:abstractionTypes>
+		</ipxact:busInterface>
+	</ipxact:busInterfaces>
+	<ipxact:componentInstantiations>
+		<ipxact:componentInstantiation>
+			<ipxact:instanceName>uart_rx_inst</ipxact:instanceName>
+			<ipxact:description>UART receiver</ipxact:description>
+			<ipxact:componentRef vendor="pulp-platform.org" library="communication.transceiver" name="spi_transceiver" version="1.0"/>
+			<ipxact:designs>
+				<ipxact:design>
+					<ipxact:designRef vendor="pulp-platform.org" library="communication.transceiver" name="spi_transceiver" version="1.0"/>
+					<ipxact:view>transceiver</ipxact:view>
+					<ipxact:designContents>
+						<ipxact:vendor>pulp-platform.org</ipxact:vendor>
+						<ipxact:library>communication.transceiver</ipxact:library>
+						<ipxact:name>spi_transceiver</ipxact:name>
+						<ipxact:version>1.0</ipxact:version>
+						<ipxact:designElements>
+							<ipxact:designElement>
+								<ipxact:name>spi_transceiver_i</ipxact:name>
