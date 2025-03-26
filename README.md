@@ -21,6 +21,11 @@ Our training dataset consists of paired instruction-response examples:
     "instruction": "Generate an IP-XACT component for a UART interface including registers for baud rate, control, status, and data.",
     "response": "<ipxact:component xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"...>...</ipxact:component>"
   }
+  
+  {
+    "instruction": "Create an IP-XACT component for an SPI interface with master mode, supporting 4-wire configuration with clock, MOSI, MISO, and chip select signals.",
+    "response": "<ipxact:component xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:ipxact=\"http://www.accellera.org/XMLSchema/IPXACT/1685-2014\"...><ipxact:vendor>example.org</ipxact:vendor><ipxact:library>spi</ipxact:library><ipxact:name>spi_master</ipxact:name>...</ipxact:component>"
+  }
   ```
 - **Coverage**: Various peripheral interfaces (UART, SPI, I2C, Wishbone) with different configurations and register maps
 
@@ -90,3 +95,8 @@ We've implemented an AI-powered verification agent using OpenAI's GPT-3.5 Turbo 
 4. Receive a detailed assessment report with pass/fail indicators for key validation areas
 
 ## 📝 Example Assessment Output
+1. XML Well-Formed: ✅ Pass
+2. Schema Compliance: ✅ Pass
+3. Bus Interfaces Valid: ✅ Pass
+4. Port Mappings Correct: ✅ Pass
+5. Component References Exist?: ✅ Pass
